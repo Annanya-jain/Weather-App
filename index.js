@@ -57,29 +57,29 @@ function setimg(data){
     if(["few clouds", "scattered clouds", "broken clouds"].includes( data.weather[0].description.toLowerCase()))
     {
         if (currentHour >= 6 && currentHour < 18) {
-            icon.src="animated/cloudy-day.svg";
+            icon.src="/animated/cloudy-day.svg";
           } else {
-            icon.src="animated/cloudy-night.svg";
+            icon.src="/animated/cloudy-night.svg";
           }
     }
    
     else if( ["shower rain", "rain", "light rain", "moderate rain", "heavy intensity rain", "very heavy rain", "extreme rain", "freezing rain", "light intensity shower rain", "heavy intensity shower rain", "ragged shower rain", "drizzle"].includes( data.weather[0].description.toLowerCase()))
     {  
-            icon.src="animated/rainy.svg";
+            icon.src="/animated/rainy.svg";
     }
    else if(["snow", "light snow", "heavy snow", "sleet", "light shower sleet", "shower sleet", "light rain and snow", "rain and snow", "light shower snow", "shower snow", "heavy shower snow"].includes( data.weather[0].description.toLowerCase()))
     {  
-            icon.src="animated/snowy.svg";
+            icon.src="/animated/snowy.svg";
     }
    else if(["thunderstorm", "squall", "tornado"].includes( data.weather[0].description.toLowerCase()))
     {  
-            icon.src="animated/thunder.svg";
+            icon.src="/animated/thunder.svg";
     }
     else{
         if (currentHour >= 6 && currentHour < 18) {
-            icon.src="animated/day.svg";
+            icon.src="/animated/day.svg";
           } else {
-            icon.src="animated/night.svg";
+            icon.src="/animated/night.svg";
           }
     }
 
